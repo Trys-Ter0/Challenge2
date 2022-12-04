@@ -1,3 +1,8 @@
+:root {
+  background: #91e0f4;
+}
+
+/*Starter*/
 * {
   box-sizing: border-box;
 }
@@ -21,3 +26,131 @@ h6 {
 p {
   margin: 0;
 }
+
+/*Starter end*/
+
+/*-----Navbar-----*/
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: baseline;
+  -ms-flex-item-align: h1 ul;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(50, 92, 125);
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change link colour on hover */
+li a:hover {
+  background-color: rgb(14, 48, 71);
+}
+h1 {
+  font-family:'Helvetica';
+  display: center;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  float: right;
+  width: 100%;
+}
+
+/*----Main-----*/
+
+.page-wrapper {
+  display: grid;
+  margin: 10px;
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1 fr 1 fr;
+  /* grid-template-areas:
+    "leftSidebar topRow topRow"
+    "leftSidebar rightContent"
+    "leftSidebar rightContent" */
+}
+
+.topRow {
+  grid-area: topRow;
+}
+
+.leftSidebar {
+  grid-area: leftSidebar;
+}
+
+.rightContent {
+  grid-area: rightContent;
+}
+
+
+.hero-banner {
+  
+}
+
+/* .work-section {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-areas: ;
+  background-color: #2196F3;
+  padding: 10px;
+  border-color: black;
+  
+} */
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 10px 20px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.work-section {
+  display: grid;
+  gap: 1rem;
+  /* grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.card1 {
+  grid-column: 1 / 3;
+}
+
